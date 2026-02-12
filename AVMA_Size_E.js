@@ -370,6 +370,7 @@ var routineTimer;
 var CountDownClock;
 var sample_num;
 var sharedKeyClock;
+var Shape_Background;
 function experimentInit() {
   document.body.style.cursor='none';
   
