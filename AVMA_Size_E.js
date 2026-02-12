@@ -2285,7 +2285,7 @@ function Init_StimRoutineEnd(trials) {
     
 Press (space) to proceed so that your data can be saved. The saving process may take up to 1 minute.
 
-After the data are saved, click 'OK' to exit and close the webpage.`
+After the data are saved, click 'OK' to exit. Once the webpage turns black, you close it.`
     ;
     } else if (session === 3) {
       instr_end_exp_text = `Great job! You have completed the study.
@@ -2303,6 +2303,13 @@ After the data are saved, click 'OK' to exit and close the webpage.`
     ;
     }
     
+    instr_end_exp_text = `Great job! You have completed the study.
+    
+Press (space) to proceed so that your data can be saved. The saving process may take up to 1 minute.
+
+After the data are saved, click 'OK' to exit. Once the webpage turns black, you close it.`
+    ;
+
     instr_rt_text_hand = `The upcoming 3 blocks are used to help you get familiar with the task.
     
 Place the Index, Middle, Ring, and Pinky fingers of your RIGHT hand on (H, U, I, L) respectively. 
@@ -2354,7 +2361,7 @@ Press (space) to continue.`
 
       instr_exp_text = `Thank you for participating in our study!
   
-This is a one-session study and it will take about 35 minutes. 
+This is a one-session study and it will take about 1.5 to 2 hours. 
 
 Once you start, you can take a break between rounds. Please DO NOT turn off your web browser until you complete the task, unless you decide to withdraw from this study.
 
@@ -2378,11 +2385,24 @@ Press (H, U, I, or L) to continue.`
     ;
     instr_cr_old_text = `Good Job! You are now ready for the tasks!
     
-In the upcoming block, you will see eight symbols on the screen, one at a time. 
+In the upcoming block, you will see eight squares on the screen, one at a time. 
 
 Each symbol corresponds to one of (A, W, E, F, H, U, I, L). You job is to learn this symbol-key association.
 
 It will be hard at the beginning, but you can do it.
+
+ACCURACY is the priority, so go as slowly as you need to. The more mistakes you make, the longer this block will take.
+    
+The block will end when your performance reach a criterion of accuracy.
+
+Ready? Press (H, U, I, or L) to continue.`
+    ;
+
+    instr_cr_old_text = `Good Job! You are now ready for the tasks!
+    
+In the upcoming block, you will see eight squares on the screen, spatially arranged to correspond to one of (A, W, E, F, H, U, I, L).
+
+One of the squares will light up and your job is to press the corresponding finger to respond.
 
 ACCURACY is the priority, so go as slowly as you need to. The more mistakes you make, the longer this block will take.
     
@@ -2397,9 +2417,9 @@ Your job is to press the corresponding key as quickly and as accurately as possi
     
 There will be ${rt_block} blocks with short breaks in between.
 
-In the first block, only 4 symbols will appear, so only their corresponding keys (${subset_key}) are required. 
+In the first block, only 4 squres might be lighted up, so only their corresponding keys (${subset_key}) are required. 
 
-In the last two blocks, all symbols will appear, and all keys are required. You will see a reminder before each block.
+In the last two blocks, all squres will be used, and all keys are required. You will see a reminder before each block.
 
 No matter which case, keep resting all 8 fingers on all keys.
     
@@ -2437,11 +2457,21 @@ Whenever you are ready, press (H, U, I, or L) to start.`
             ;
   }
   
+  instr_rt_pre_text = `Now you are going to practice the symbol-key map you learned. 
+      
+Your job is to press the corresponding key as quickly and as accurately as possible.
+  
+There will be ${rt_pre_block} blocks with short breaks in between.
+  
+
+Whenever you are ready, press (H, U, I, or L) to start.`
+  ;
+
     instr_tr_old_pre_text = `Good job so far.
     
-In the following ${tr_block_old} blocks, use the symbol-key map you learned. Press the corresponding key ON the fourth beep. 
+In the following ${tr_block_old} blocks, press the corresponding key ON the fourth beep. 
 
-Remember, the symbol may show up very late. In this case, MAKE A GUESS. This task is designed to be difficult, so it is okay to make a guess when you do not have enough time to make a decision.
+Remember, the square may light up very late. In this case, MAKE A GUESS. This task is designed to be difficult, so it is okay to make a guess when you do not have enough time to make a decision.
     
 
 Press (H, U, I, or L) to start.`
@@ -2450,16 +2480,16 @@ Press (H, U, I, or L) to start.`
     
     instr_tr_old_post_text = `Great job. 
     
-In the following ${tr_block_old} blocks, use the symbol-key map you practices. Press the corresponding key ON the fourth beep. 
+In the following ${tr_block_old} blocks, press the corresponding key ON the fourth beep. 
 
-In the first few blocks, only 4 symbols will appear, so only their corresponding keys (${subset_key}) are required. 
+In the first few blocks, only 4 squares will be lighted up, so only their corresponding keys (${subset_key}) are required. 
 
-In the rest blocks, all symbols will appear, and all keys are required. You will see a reminder before each block.
+In the rest blocks, all squares will be used, and all keys are required. You will see a reminder before each block.
 
 No matter which case, keep resting all 8 fingers on all keys.
 
 
-Remember, the symbol may show up very late. In this case, MAKE A GUESS. This task is designed to be difficult, so it is okay to make a guess.
+Remember, the square may light up very late. In this case, MAKE A GUESS. This task is designed to be difficult, so it is okay to make a guess.
     
 
 Press (${subset_key}) to start.`
@@ -2483,10 +2513,11 @@ Press (H, U, I, or L) to start.`
         if ((grp_swap === 1)) {
             instr_cr_new_text = `Great job.
     
-In the next block, you will see the same 8 symbols, but this time they may correspond with a different key (A, W, E, F, H, U, I, L).
+In the next block, you will see the same 8 squares, but this time they may correspond with a different key (A, W, E, F, H, U, I, L).
 
-Your job is to figure out the new association between the symbols and the keys.
+Your job is to figure out the new association between the squares and the keys.
 
+It will be hard at the beginning, but you can do it.
 
 ACCURACY is the priority, so go as slowly as you need to. The more mistakes you make, the longer this block will take.
 
@@ -2514,27 +2545,16 @@ Ready? Press (H, U, I, or L) to continue.`
     if ((grp_swap === 1)) {
         instr_tr_new_text = `Great job. We are almost there!
 
-In the last ${tr_block_new_swap} blocks, use the NEW symbol-key map you just learned: 
+In the last ${tr_block_new_swap} blocks, use the NEW square-key map you just learned: 
 Press the corresponding key ON the fourth beep. 
             
-Remember, the symbol may show up very late. In this case, MAKE A GUESS. This task is designed to be difficult, so it is okay to make a guess when you do not have enough time to make a decision.
+Remember, the square may light up very late. In this case, MAKE A GUESS. This task is designed to be difficult, so it is okay to make a guess when you do not have enough time to make a decision.
 
             
         
 Press (H, U, I, or L) to start.`
     ;
 
-        /* instr_tr_new_text = `Great job. We are almost there!
-
-In the last ${tr_block_new_swap} blocks, use the symbol-key map you just learned: 
-Press the corresponding key ON the fourth beep. 
-            
-Remember, the symbol may show up very late. In this case, MAKE A GUESS. This task is designed to be difficult, so it is okay to make a guess when you do not have enough time to make a decision.
-
-            
-        
-Press (H, U, I, or L) to start.`
-    ; */
     } else {
         if ((grp_stop === 1)) {
             instr_tr_new_text = `Great job. We are almost there!
