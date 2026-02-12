@@ -156,7 +156,7 @@ psychoJS.start({
    // {'name': 'media/dmnb.png', 'path': './media/dmnb.png'},
    // {'name': 'media/dmnb_g.png', 'path': './media/dmnb_g.png'},
    // {'name': 'media/dmnb_r.png', 'path': './media/dmnb_r.png'},
-   {'name': 'media/Shape_Background.png', 'path': './media/Shape_Background.png'},
+   {'name': 'media/Shape_Background.png', 'path': './media/Shape_background.png'},
     {'name': 'media/coin.wav', 'path': './media/coin.wav'},
     {'name': 'media/buzz.wav', 'path': './media/buzz.wav'},
     {'name': 'media/beep.wav', 'path': './media/beep.wav'}
@@ -2124,7 +2124,7 @@ function Init_StimRoutineBegin(trials) {
     coin = StimList[0]["Sound_P"];
     buzz = StimList[0]["Sound_N"];
     beep = StimList[0]["Beep"];
-    shape_background = StimList[0]["Shape_Background"];
+    shape_background = StimList[0]["Shape_background"];
     for (var i = 0, _pj_a = num_symb; (i < _pj_a); i += 1) {
         stimnum.push(StimList[i]["StimNum"]);
         symb.push(StimList[i]["Symb"]);
