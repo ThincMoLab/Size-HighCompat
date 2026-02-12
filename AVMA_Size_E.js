@@ -50,13 +50,13 @@ psychoJS.openWindow({
 });
 
 // store info about the experiment session:
-let expName = 'Symbol-E';  // from the Builder filename that created this script
+let expName = 'ThincMo Lab Study';  // from the Builder filename that created this script
 // let expInfo = {'participant': '', 'session': ''};
 let expInfo = {'participant': '', 'session': ['', 1, 2, 3, 4]};
 
 // schedule the experiment:
 psychoJS.schedule(psychoJS.gui.DlgFromDict({
-  text: "Welcome. Please click 'Ok' to continue.",
+  text: "Welcome. Please click 'Ok' to proceed.",
   dictionary: expInfo,
   title: expName
 }));
@@ -156,7 +156,7 @@ psychoJS.start({
    // {'name': 'media/dmnb.png', 'path': './media/dmnb.png'},
    // {'name': 'media/dmnb_g.png', 'path': './media/dmnb_g.png'},
    // {'name': 'media/dmnb_r.png', 'path': './media/dmnb_r.png'},
-    {'name': 'media/Shape_background.png', 'path': './media/Shape_background.png'},
+    {'name': 'media/shape_background.png', 'path': './media/shape_background.png'},
     {'name': 'media/coin.wav', 'path': './media/coin.wav'},
     {'name': 'media/buzz.wav', 'path': './media/buzz.wav'},
     {'name': 'media/beep.wav', 'path': './media/beep.wav'}
