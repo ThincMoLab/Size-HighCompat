@@ -383,10 +383,10 @@ function experimentInit() {
 
 ////////////////////////////////////////
 tr_block_hand = 4;
-num_trials_hand = 96;
+num_trials_hand = 8 //96;
 num_trials_cr = 2000;
-num_criterion = 5;
-num_trials = 96;
+num_criterion = 1 //5;
+num_trials = 8; //96;
 rt_block = 0;
 tr_block_old = 0;
 tr_block_new_swap = 6;
@@ -423,7 +423,13 @@ num_trials_sound_check = 20;
     cr_old_yes = 1;
     rt_pre_yes = 1;
     rt_pre_block = 12;
-    
+    rt_yes = 1;
+    rt_block = 3;
+    tr_old_post_yes = 1;
+    tr_block_old = 9;
+    cr_new_yes = 1;
+    tr_new_yes = 1;
+    tr_block_new_swap = 6;
 } else if (session === 2) {
     instr_exp = 1;
     sound_check_yes = 1;
