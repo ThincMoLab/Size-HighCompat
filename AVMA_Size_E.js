@@ -371,6 +371,7 @@ var CountDownClock;
 var sample_num;
 var sharedKeyClock;
 var Shape_Background;
+var Stim_Shape;
 function experimentInit() {
   document.body.style.cursor='none';
   
