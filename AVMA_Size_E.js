@@ -8542,7 +8542,8 @@ function quitPsychoJS(message, isCompleted) {
   }
 
   psychoJS.window.close();
-  psychoJS.quit({message: message, isCompleted: isCompleted});
+  psychoJS.quit({message: "The data have been saved successfully!",
+     isCompleted: isCompleted});
   
   document.body.style.cursor='auto';
 
