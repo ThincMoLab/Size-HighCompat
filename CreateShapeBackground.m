@@ -14,7 +14,7 @@ clear; close all; clc;
 
 % --- Square Properties ---
 square_size = 0.025;          % Width/height of each square (height units)
-line_width = 1;              % Border thickness (pixels)
+line_width = 6;              % Border thickness (pixels)
 square_color = [1, 1, 1];    % RGB: white borders
 fill_color = 'none';         % 'none' for transparent, or [0,0,0] for black
 
@@ -42,7 +42,7 @@ raise_amount = 0.00;         % Additional raise for W, E, U, I (default 0.02)
 % --- Canvas Properties ---
 canvas_width = 0.5;         % Total width (matches your HandShape)
 canvas_height = 0.35;        % Total height
-dpi = 300;                   % Resolution (higher = better quality)
+dpi = 600;                   % Resolution (higher = better quality)
 
 % --- Output ---
 output_file = 'shape_background.png';
