@@ -372,6 +372,7 @@ var sample_num;
 var sharedKeyClock;
 var Shape_Background;
 var Stim_Shape;
+var position;
 function experimentInit() {
   document.body.style.cursor='none';
   
@@ -6661,7 +6662,7 @@ function Instr_TR_Old_PreRoutineBegin(trials) {
     remap = 0;
     block_count = 0;
     pre = 1;
-    position = position_map;
+    position = shape_map;
     // symb_g = symb_g_map;
     // symb_r = symb_r_map;
     
