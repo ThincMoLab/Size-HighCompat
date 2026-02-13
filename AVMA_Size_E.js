@@ -422,7 +422,7 @@ num_trials_sound_check = 20;
     instr_exp = 1;
     sound_check_yes = 0;
     tr_hand_yes = 0;
-    rt_hand_yes = 0;
+    rt_hand_yes = 1;
     cr_old_yes = 1;
     rt_pre_yes = 1;
     rt_pre_block = 12;
@@ -589,8 +589,8 @@ num_trials_sound_check = 20;
     texRes : 128, interpolate : true, depth : -3.0 
   });
   
-  console.log('mark')
-  
+  console.log('mark1')
+
   RT_Stim_Hand = new visual.Polygon ({
     win: psychoJS.window, name: 'RT_Stim_Hand', units : 'height', 
     edges: 32, size:[0.025, 0.025],
@@ -4389,7 +4389,7 @@ function Pre_Trial_HandRoutineBegin(trials) {
     //Rec_Frame_Hand.setOpacity(rec_frame_opacity);
    // Rec_Frame_Hand.setLineColor(new util.Color(rec_frame_color));
    // Rec_Frame_Hand.setLineWidth(rec_wd);
-    HandShape.setImage(hand_shape);
+    HandShape.setImage(shape_background);
     x_item = seq_handx[trial_count];
     key_item = seq_key_hand[trial_count];
     y_item = seq_handy[trial_count];
@@ -4537,7 +4537,7 @@ function RT_Enter_Trial_HandRoutineBegin(trials) {
     RT_Press.keys = undefined;
     RT_Press.rt = undefined;
     _allKeys = [];
-    HandShape.setImage(hand_shape);
+    HandShape.setImage(shape_background);
     RT_Stim_Hand.setPos(position_item);
     RT_Stim_Hand.setFillColor(new util.Color(color_stim_hand));
     RT_Stim_Hand.setLineColor(new util.Color(color_stim_hand));
@@ -4727,7 +4727,7 @@ function RT_Feedback_HandRoutineBegin(trials) {
     //Rec_Frame.setOpacity(rec_frame_opacity);
     //Rec_Frame.setLineColor(new util.Color(rec_frame_color));
     //Rec_Frame.setLineWidth(rec_wd);
-    HandShape.setImage(hand_shape);
+    HandShape.setImage(shape_background);
     RT_Stim_Hand.setPos(position_item);
     RT_Stim_Hand.setFillColor(new util.Color(feedback_col));
     RT_Stim_Hand.setLineColor(new util.Color(feedback_col));
