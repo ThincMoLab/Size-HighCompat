@@ -10,17 +10,17 @@ line_width = 1;
 
 positions = [
     -0.2,  0.00;
-    -0.15,  0.02;
-    -0.1,  0.02;
+    -0.15,  0.03;
+    -0.1,  0.03;
     -0.05,  0.00;
      0.05,  0.00;
-     0.1,  0.02;
-     0.15,  0.02;
+     0.1,  0.03;
+     0.15,  0.03;
      0.2,  0.00;
 ];
 
-canvas_width = 1;
-canvas_height = 0.5;
+canvas_width = 0.8;
+canvas_height = 0.4;
 screen_height_px = 1080;  % ← FIXED: was using DPI calculation
 
 output_file = 'shape_background.png';
