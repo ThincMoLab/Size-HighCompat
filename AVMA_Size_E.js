@@ -421,7 +421,7 @@ num_trials_sound_check = 20;
   if ((session === 1)) {
     instr_exp = 1;
     sound_check_yes = 0;
-    tr_hand_yes = 1;
+    tr_hand_yes = 0;
     rt_hand_yes = 0;
     cr_old_yes = 1;
     rt_pre_yes = 1;
@@ -4079,6 +4079,7 @@ function Creat_StimSeqRoutineBegin(trials) {
         seq_shapey = [];
         seq_key_shape = [];
         seq_keynum_shape = [];
+        seq_position_shape = [];
     } else {
         seq_stimnum = [];
         seq_key = [];
