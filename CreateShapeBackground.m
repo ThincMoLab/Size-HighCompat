@@ -19,8 +19,8 @@ positions = [
      0.16,  0.00;
 ];
 
-canvas_width = 0.60;
-canvas_height = 0.35;
+canvas_width = 1;
+canvas_height = 0.5;
 screen_height_px = 1080;  % ← FIXED: was using DPI calculation
 
 output_file = 'shape_background.png';
