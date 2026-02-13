@@ -5,22 +5,22 @@
 clear; close all; clc;
 
 %% PARAMETERS
-square_size = 0.04;
+square_size = 0.1;
 line_width = 1;
 
 positions = [
-    -0.2,  0.00;
-    -0.15,  0.03;
-    -0.1,  0.03;
-    -0.05,  0.00;
-     0.05,  0.00;
-     0.1,  0.03;
-     0.15,  0.03;
-     0.2,  0.00;
+    -0.7,  0.00;
+    -0.55,  0.04;
+    -0.4,  0.04;
+    -0.25,  0.00;
+     0.25,  0.00;
+     0.4,  0.04;
+     0.55,  0.04;
+     0.7,  0.00;
 ];
 
-canvas_width = 0.8;
-canvas_height = 0.4;
+canvas_width = 1;
+canvas_height = 0.5;
 screen_height_px = 1080;  % ← FIXED: was using DPI calculation
 
 output_file = 'shape_background.png';
