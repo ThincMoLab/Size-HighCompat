@@ -589,6 +589,8 @@ num_trials_sound_check = 20;
     texRes : 128, interpolate : true, depth : -3.0 
   });
   
+  console.log('mark')
+  
   RT_Stim_Hand = new visual.Polygon ({
     win: psychoJS.window, name: 'RT_Stim_Hand', units : 'height', 
     edges: 32, size:[0.025, 0.025],
