@@ -421,7 +421,7 @@ num_trials_sound_check = 20;
     instr_exp = 1;
     sound_check_yes = 1;
     tr_hand_yes = 1;
-    rt_hand_yes = 1;
+    rt_hand_yes = 0;
     cr_old_yes = 1;
     rt_pre_yes = 1;
     rt_pre_block = 12;
@@ -622,6 +622,7 @@ num_trials_sound_check = 20;
     win: psychoJS.window,
     name: 'Instr_Block_Num_Text',
     anchorHoriz: 'center',
+    alignHoriz: 'center',
     text: 'default text',
     font: 'Arial',
     units: undefined, 
@@ -5980,7 +5981,7 @@ function Instr_CR_OldRoutineBegin(trials) {
     stim_type = "Shape";
     block_count = 0;
     remap = 0;
-    position = positon_map;
+    position = shape_map;
     // symb_g = symb_g_map;
     // symb_r = symb_r_map;
     
