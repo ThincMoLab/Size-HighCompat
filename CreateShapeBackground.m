@@ -21,7 +21,7 @@ positions = [
 
 canvas_width = 1;
 canvas_height = 0.5;
-screen_height_px = 1080;  % ← FIXED: was using DPI calculation
+screen_height_px = 3000;  % ← FIXED: was using DPI calculation
 
 output_file = 'shape_background.png';
 output_folder = './media/';
