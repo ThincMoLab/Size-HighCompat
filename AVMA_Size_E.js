@@ -140,7 +140,7 @@ psychoJS.start({
    // {'name': 'media/dgnb.png', 'path': './media/dgnb.png'},
    // {'name': 'media/dgnb_g.png', 'path': './media/dgnb_g.png'},
    // {'name': 'media/dgnb_r.png', 'path': './media/dgnb_r.png'},
-   // {'name': 'conditions.xlsx', 'path': './conditions.xlsx'},
+    {'name': 'conditions.xlsx', 'path': './conditions.xlsx'},
    // {'name': 'media/djnb.png', 'path': './media/djnb.png'},
    // {'name': 'media/djnb_g.png', 'path': './media/djnb_g.png'},
    // {'name': 'media/djnb_r.png', 'path': './media/djnb_r.png'},
