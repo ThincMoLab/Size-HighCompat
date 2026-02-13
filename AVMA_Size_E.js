@@ -422,7 +422,7 @@ num_trials_sound_check = 20;
     instr_exp = 1;
     sound_check_yes = 0;
     tr_hand_yes = 0;
-    rt_hand_yes = 1;
+    rt_hand_yes = 0;
     cr_old_yes = 1;
     rt_pre_yes = 1;
     rt_pre_block = 12;
@@ -589,8 +589,7 @@ num_trials_sound_check = 20;
     texRes : 128, interpolate : true, depth : -3.0 
   });
   
-  console.log('mark2')
-
+  console.log('mark')
   RT_Stim_Hand = new visual.Polygon ({
     win: psychoJS.window, name: 'RT_Stim_Hand', units : 'height', 
     edges: 32, size:[0.025, 0.025],
@@ -604,7 +603,7 @@ num_trials_sound_check = 20;
     win : psychoJS.window,
     name : 'Shape_Background', units : 'height', 
     image : undefined, mask : undefined,
-    ori : 0, pos : [0, 0], size : [2, 2],
+    ori : 0, pos : [0, 0], size : [1, 0.5],
     color : new util.Color([1, 1, 1]), opacity : 1,
     flipHoriz : false, flipVert : false,
     texRes : 128, interpolate : true, depth : -3.0 
@@ -613,7 +612,7 @@ num_trials_sound_check = 20;
   
   Stim_Shape = new visual.Rect ({
     win: psychoJS.window, name: 'Stim_Rec', units : 'height', 
-    width: [0.05, 0.05][0], height: [0.05, 0.05][1],
+    width: [0.25, 0.25][0], height: [0.25, 0.25][1],
     ori: 0, pos: [0, 0],
     lineWidth: 1, lineColor: new util.Color([1, 1, 1]),
     fillColor: new util.Color([1, 1, 1]),
