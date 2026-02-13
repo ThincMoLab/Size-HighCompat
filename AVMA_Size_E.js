@@ -619,6 +619,7 @@ num_trials_sound_check = 20;
     opacity: 1, depth: -4, interpolate: true,
   });
 
+  console.log('test')
   // Initialize components for Routine "Instr_Block_Num"
   Instr_Block_NumClock = new util.Clock();
   Instr_Block_Num_Text = new visual.TextStim({
