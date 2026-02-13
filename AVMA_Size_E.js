@@ -44,7 +44,7 @@ const psychoJS = new PsychoJS({
 // open window:
 psychoJS.openWindow({
   fullscr: true,
-  color: new util.Color([(- 1), (- 1), (- 1)]),
+  color: new util.Color([(- 0.5), (- 0.5), (- 0.5)]),
   units: 'height',
   waitBlanking: true
 });
@@ -589,7 +589,7 @@ num_trials_sound_check = 20;
     texRes : 128, interpolate : true, depth : -3.0 
   });
   
-  console.log('mark1')
+  console.log('mark2')
 
   RT_Stim_Hand = new visual.Polygon ({
     win: psychoJS.window, name: 'RT_Stim_Hand', units : 'height', 
