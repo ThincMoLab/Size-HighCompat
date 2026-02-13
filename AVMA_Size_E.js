@@ -608,15 +608,7 @@ num_trials_sound_check = 20;
     texRes : 128, interpolate : true, depth : -3.0 
   });
 
-  Rec_Frame = new visual.Rect ({
-    win: psychoJS.window, name: 'Rec_Frame', units : 'height', 
-    width: [0.3, 0.3][0], height: [0.3, 0.3][1],
-    ori: 0, pos: [0, 0],
-    lineWidth: 1.0, lineColor: new util.Color(1.0),
-    fillColor: new util.Color([(- 1), (- 1), (- 1)]),
-    opacity: 1.0, depth: -1, interpolate: true,
-  });
-
+  
   Stim_Shape = new visual.Rect ({
     win: psychoJS.window, name: 'Stim_Rec', units : 'height', 
     width: [0.25, 0.25][0], height: [0.25, 0.25][1],
@@ -6265,6 +6257,8 @@ function RT_Enter_TrialRoutineBegin(trials) {
     //Letter.setText(symb_item);
     Shape_Background.setImage(shape_background);
     Stim_Shape.setPos(position_item);
+    Stim_Shape.setFillColor(new util.Color(color_stim_hand));
+    Stim_Shape.setLineColor(new util.Color(color_stim_hand));
     RT_Press.keys = undefined;
     RT_Press.rt = undefined;
     _allKeys = [];
@@ -6805,6 +6799,8 @@ function TR_Enter_TrialsRoutineBegin(trials) {
 
     Shape_Background.setImage(shape_background);
     Stim_Shape.setPos(position_item);
+    Stim_Shape.setFillColor(new util.Color(color_stim_hand));
+    Stim_Shape.setLineColor(new util.Color(color_stim_hand));
     // Rec_Frame.setOpacity(rec_frame_opacity);
     // Rec_Frame.setLineColor(new util.Color(rec_frame_color));
     // Rec_Frame.setLineWidth(rec_wd);
