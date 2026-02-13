@@ -604,7 +604,7 @@ num_trials_sound_check = 20;
     win : psychoJS.window,
     name : 'Shape_Background', units : 'height', 
     image : undefined, mask : undefined,
-    ori : 0, pos : [0, 0], size : [1, 0.5],
+    ori : 0, pos : [0, 0], size : [2, 2],
     color : new util.Color([1, 1, 1]), opacity : 1,
     flipHoriz : false, flipVert : false,
     texRes : 128, interpolate : true, depth : -3.0 
