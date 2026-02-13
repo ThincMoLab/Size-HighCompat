@@ -41,7 +41,11 @@ width_px  = round(canvas_width  * screen_height_px);  % 1080, 2160, 4320, ...
 height_px = round(canvas_height * screen_height_px);  %  540, 1080, 2160, ...
 
 % Output filename (saved to experiment root)
-output_path = fullfile('./', 'shape_background.png');
+
+utput_folder = './media/';
+if ~exist(output_folder, 'dir'); mkdir(output_folder); end
+output_path = fullfile(output_folder, 'shape_background.png');
+
 
 %% ------------------------ Create RGBA image -------------------------------
 % RGBA image: initialize fully transparent

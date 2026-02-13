@@ -4389,7 +4389,7 @@ function Pre_Trial_HandRoutineBegin(trials) {
     //Rec_Frame_Hand.setOpacity(rec_frame_opacity);
    // Rec_Frame_Hand.setLineColor(new util.Color(rec_frame_color));
    // Rec_Frame_Hand.setLineWidth(rec_wd);
-    HandShape.setImage(shape_background);
+    HandShape.setImage(hand_shape);
     x_item = seq_handx[trial_count];
     key_item = seq_key_hand[trial_count];
     y_item = seq_handy[trial_count];
@@ -4537,7 +4537,7 @@ function RT_Enter_Trial_HandRoutineBegin(trials) {
     RT_Press.keys = undefined;
     RT_Press.rt = undefined;
     _allKeys = [];
-    HandShape.setImage(shape_background);
+    HandShape.setImage(hand_shape);
     RT_Stim_Hand.setPos(position_item);
     RT_Stim_Hand.setFillColor(new util.Color(color_stim_hand));
     RT_Stim_Hand.setLineColor(new util.Color(color_stim_hand));
@@ -4727,7 +4727,7 @@ function RT_Feedback_HandRoutineBegin(trials) {
     //Rec_Frame.setOpacity(rec_frame_opacity);
     //Rec_Frame.setLineColor(new util.Color(rec_frame_color));
     //Rec_Frame.setLineWidth(rec_wd);
-    HandShape.setImage(shape_background);
+    HandShape.setImage(hand_shape);
     RT_Stim_Hand.setPos(position_item);
     RT_Stim_Hand.setFillColor(new util.Color(feedback_col));
     RT_Stim_Hand.setLineColor(new util.Color(feedback_col));
