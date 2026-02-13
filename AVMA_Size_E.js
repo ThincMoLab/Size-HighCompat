@@ -422,7 +422,7 @@ num_trials_sound_check = 20;
     instr_exp = 1;
     sound_check_yes = 0;
     tr_hand_yes = 0;
-    rt_hand_yes = 1;
+    rt_hand_yes = 0;
     cr_old_yes = 1;
     rt_pre_yes = 1;
     rt_pre_block = 12;
@@ -2137,7 +2137,7 @@ function Init_StimRoutineBegin(trials) {
     coin = StimList[0]["Sound_P"];
     buzz = StimList[0]["Sound_N"];
     beep = StimList[0]["Beep"];
-    shape_background = StimList[0]["Shape_background"];
+    shape_background = StimList[0]["Shape_Background"];
     for (var i = 0, _pj_a = num_symb; (i < _pj_a); i += 1) {
         stimnum.push(StimList[i]["StimNum"]);
         symb.push(StimList[i]["Symb"]);
