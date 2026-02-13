@@ -122,3 +122,25 @@ axis on;
 
 fprintf('\n🔍 Right panel shows how it looks in PsychoJS!\n');
 fprintf('   If you see white squares there, it will work!\n');
+
+%% VERIFY IMAGE
+[img_check, ~, alpha_check] = imread(output_path);
+
+fprintf('\n📊 IMAGE PROPERTIES:\n');
+fprintf('   RGB size: %dx%dx%d\n', size(img_check));
+fprintf('   Alpha size: %dx%d\n', size(alpha_check));
+fprintf('   RGB data type: %s\n', class(img_check));
+fprintf('   Alpha data type: %s\n', class(alpha_check));
+fprintf('   RGB range: [%d, %d]\n', min(img_check(:)), max(img_check(:)));
+fprintf('   Alpha range: [%d, %d]\n', min(alpha_check(:)), max(alpha_check(:)));
+fprintf('   Non-transparent pixels: %d\n', sum(alpha_check(:) > 0));
+
+% Show what was saved
+figure('Name', 'What was actually saved');
+subplot(1,2,1);
+imshow(img_check);
+title('RGB channels');
+
+subplot(1,2,2);
+imshow(alpha_check);
+title('Alpha channel (white = opaque)');
