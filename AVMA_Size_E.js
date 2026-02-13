@@ -2109,6 +2109,7 @@ function Import_Stim_FileRoutineEnd(trials) {
 var coin;
 var beep;
 var buzz;
+var shape_background;
 var symb_map_rnd;
 var remap_pair_rnd;
 var remap_pair_1 = [];
