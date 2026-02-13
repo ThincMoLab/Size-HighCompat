@@ -4080,6 +4080,7 @@ function Creat_StimSeqRoutineBegin(trials) {
         seq_key_shape = [];
         seq_keynum_shape = [];
         seq_position_shape = [];
+        seq_stimnum_shape = [];
     } else {
         seq_stimnum = [];
         seq_key = [];
