@@ -424,7 +424,7 @@ num_trials_sound_check = 20;
     tr_hand_yes = 0;
     rt_hand_yes = 0;
     cr_old_yes = 1;
-    rt_pre_yes = 1;
+    rt_pre_yes = 0;
     rt_pre_block = 12;
     rt_yes = 1;
     rt_block = 3;
@@ -7276,7 +7276,7 @@ function Instr_RT_PreRoutineEachFrame(trials) {
     }
 
     
-    // *Instr_RT_Press* updates
+    // *Instr_Exp_Press* updates
     if (t >= 0.0 && Instr_Exp_Press.status === PsychoJS.Status.NOT_STARTED) {
       // keep track of start time/frame for later
       Instr_Exp_Press.tStart = t;  // (not accounting for frame time here)
@@ -7358,8 +7358,8 @@ function Instr_RTRoutineBegin(trials) {
     frameN = -1;
     // update component parameters for each repeat
     Instr_Exp_Text.setText(instr_rt_text);
-    Instr_RT_Press.keys = undefined;
-    Instr_RT_Press.rt = undefined;
+    Instr_Exp_Press.keys = undefined;
+    Instr_Exp_Press.rt = undefined;
     _Instr_allKeys = [];
     block_type = "RT";
     stim_type = "Shape";
@@ -7381,7 +7381,7 @@ function Instr_RTRoutineBegin(trials) {
     // keep track of which components have finished
     Instr_RTComponents = [];
     Instr_RTComponents.push(Instr_Exp_Text);
-    Instr_RTComponents.push(Instr_RT_Press);
+    Instr_RTComponents.push(Instr_Exp_Press);
     
     for (const thisComponent of Instr_RTComponents)
       if ('status' in thisComponent)
@@ -7411,24 +7411,24 @@ function Instr_RTRoutineEachFrame(trials) {
     }
 
     
-    // *Instr_RT_Press* updates
-    if (t >= 0.0 && Instr_RT_Press.status === PsychoJS.Status.NOT_STARTED) {
+    // *Instr_Exp_Press* updates
+    if (t >= 0.0 && Instr_Exp_Press.status === PsychoJS.Status.NOT_STARTED) {
       // keep track of start time/frame for later
-      Instr_RT_Press.tStart = t;  // (not accounting for frame time here)
-      Instr_RT_Press.frameNStart = frameN;  // exact frame index
+      Instr_Exp_Press.tStart = t;  // (not accounting for frame time here)
+      Instr_Exp_Press.frameNStart = frameN;  // exact frame index
       
       // keyboard checking is just starting
-      psychoJS.window.callOnFlip(function() { Instr_RT_Press.clock.reset(); });  // t=0 on next screen flip
-      psychoJS.window.callOnFlip(function() { Instr_RT_Press.start(); }); // start on screen flip
-      psychoJS.window.callOnFlip(function() { Instr_RT_Press.clearEvents(); });
+      psychoJS.window.callOnFlip(function() { Instr_Exp_Press.clock.reset(); });  // t=0 on next screen flip
+      psychoJS.window.callOnFlip(function() { Instr_Exp_Press.start(); }); // start on screen flip
+      psychoJS.window.callOnFlip(function() { Instr_Exp_Press.clearEvents(); });
     }
     
-    if (Instr_RT_Press.status === PsychoJS.Status.STARTED) {
-      let theseKeys = Instr_RT_Press.getKeys({keyList: subset_key_1, waitRelease: false});
+    if (Instr_Exp_Press.status === PsychoJS.Status.STARTED) {
+      let theseKeys = Instr_Exp_Press.getKeys({keyList: subset_key_1, waitRelease: false});
       _Instr_allKeys = _Instr_allKeys.concat(theseKeys);
       if (_Instr_allKeys.length > 0) {
-        Instr_RT_Press.keys = _Instr_allKeys[0].name;  // just the first key pressed
-        Instr_RT_Press.rt = _Instr_allKeys[0].rt;
+        Instr_Exp_Press.keys = _Instr_allKeys[0].name;  // just the first key pressed
+        Instr_Exp_Press.rt = _Instr_allKeys[0].rt;
         // a response ends the routine
         continueRoutine = false;
       }
@@ -7469,13 +7469,13 @@ function Instr_RTRoutineEnd(trials) {
         thisComponent.setAutoDraw(false);
       }
     }
-    psychoJS.experiment.addData('Instr_RT_Press.keys', Instr_RT_Press.keys);
-    if (typeof Instr_RT_Press.keys !== 'undefined') {  // we had a response
-        psychoJS.experiment.addData('Instr_RT_Press.rt', Instr_RT_Press.rt);
+    psychoJS.experiment.addData('Instr_Exp_Press.keys', Instr_Exp_Press.keys);
+    if (typeof Instr_Exp_Press.keys !== 'undefined') {  // we had a response
+        psychoJS.experiment.addData('Instr_Exp_Press.rt', Instr_Exp_Press.rt);
         routineTimer.reset();
         }
     
-    Instr_RT_Press.stop();
+    Instr_Exp_Press.stop();
     // the Routine "Instr_RT" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset();
     
