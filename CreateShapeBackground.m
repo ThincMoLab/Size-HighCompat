@@ -9,14 +9,14 @@ square_size = 0.07;
 line_width = 1;
 
 positions = [
-    -0.27,  0.00;
-    -0.2,  0.08;
-    -0.12,  0.09;
-    -0.05,  0.00;
-     0.05,  0.00;
-     0.12,  0.09;
-     0.2,  0.08;
-     0.27,  0.00;
+    -0.28,  0.00;
+    -0.21,  0.08;
+    -0.13,  0.09;
+    -0.06,  0.00;
+     0.06,  0.00;
+     0.13,  0.09;
+     0.21,  0.08;
+     0.28,  0.00;
 ];
 
 canvas_width = 2;
@@ -57,26 +57,26 @@ for i = 1:size(positions, 1)
     % Top border
     y_top_start = y1;
     y_top_end = min(y1 + line_width - 1, y2);
-    img(y_top_start:y_top_end, x1:x2, 1:3) = 255;
-    img(y_top_start:y_top_end, x1:x2, 4) = 255;
+    img(y_top_start:y_top_end, x1:x2, 1:3) = 255/2;
+    img(y_top_start:y_top_end, x1:x2, 4) = 255/2;
     
     % Bottom border
     y_bot_start = max(y2 - line_width + 1, y1);
     y_bot_end = y2;
-    img(y_bot_start:y_bot_end, x1:x2, 1:3) = 255;
-    img(y_bot_start:y_bot_end, x1:x2, 4) = 255;
+    img(y_bot_start:y_bot_end, x1:x2, 1:3) = 255/2;
+    img(y_bot_start:y_bot_end, x1:x2, 4) = 255/2;
     
     % Left border
     x_left_start = x1;
     x_left_end = min(x1 + line_width - 1, x2);
-    img(y1:y2, x_left_start:x_left_end, 1:3) = 255;
-    img(y1:y2, x_left_start:x_left_end, 4) = 255;
+    img(y1:y2, x_left_start:x_left_end, 1:3) = 255/2;
+    img(y1:y2, x_left_start:x_left_end, 4) = 255/2;
     
     % Right border
     x_right_start = max(x2 - line_width + 1, x1);
     x_right_end = x2;
-    img(y1:y2, x_right_start:x_right_end, 1:3) = 255;
-    img(y1:y2, x_right_start:x_right_end, 4) = 255;
+    img(y1:y2, x_right_start:x_right_end, 1:3) = 255/2;
+    img(y1:y2, x_right_start:x_right_end, 4) = 255/2;
 end
 
 %% SAVE IMAGE
