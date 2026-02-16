@@ -616,7 +616,7 @@ num_trials_sound_check = 20;
     ori: 0, pos: [0, 0],
     lineWidth: 1, lineColor: new util.Color([1, 1, 1]),
     fillColor: new util.Color([1, 1, 1]),
-    opacity: 1, depth: -4, interpolate: true,
+    opacity: 1, depth: -2, interpolate: true,
   });
 
   // Initialize components for Routine "Instr_Block_Num"
