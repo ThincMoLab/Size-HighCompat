@@ -7975,6 +7975,7 @@ function Instr_TR_NewRoutineBegin(trials) {
     remap = 1;
     block_count = 0;
     set_size = 8;
+    position = shape_remap;
     // if (grp_stop === 1) {
     //     symb = symb_map;
     //     symb_g = symb_g_map;
