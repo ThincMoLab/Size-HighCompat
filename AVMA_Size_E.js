@@ -612,13 +612,13 @@ num_trials_sound_check = 20;
   
   Stim_Shape = new visual.Rect ({
     win: psychoJS.window, name: 'Stim_Rec', units : 'height', 
-    width: [0.04, 0.04][0], height: [0.04, 0.04][1],
+    width: [0.03, 0.03][0], height: [0.03, 0.03][1],
     ori: 0, pos: [0, 0],
     lineWidth: 1, lineColor: new util.Color([1, 1, 1]),
     fillColor: new util.Color([1, 1, 1]),
     opacity: 1, depth: -2, interpolate: true,
   });
-
+ 
   // Initialize components for Routine "Instr_Block_Num"
   Instr_Block_NumClock = new util.Clock();
   Instr_Block_Num_Text = new visual.TextStim({
