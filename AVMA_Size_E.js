@@ -420,15 +420,15 @@ num_trials_sound_check = 20;
   
   if ((session === 1)) {
     instr_exp = 1;
-    sound_check_yes = 1;
-    tr_hand_yes = 1;
-    rt_hand_yes = 1;
-    cr_old_yes = 1;
-    rt_pre_yes = 1;
+    sound_check_yes = 0;
+    tr_hand_yes = 0;
+    rt_hand_yes = 0;
+    cr_old_yes = 0;
+    rt_pre_yes = 0;
     rt_pre_block = 12;
-    rt_yes = 1;
+    rt_yes = 0;
     rt_block = 3;
-    tr_old_post_yes = 1;
+    tr_old_post_yes = 0;
     tr_block_old = 9;
     cr_new_yes = 1;
     tr_new_yes = 1;
