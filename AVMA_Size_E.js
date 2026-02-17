@@ -612,7 +612,7 @@ num_trials_sound_check = 20;
   
   Stim_Shape = new visual.Rect ({
     win: psychoJS.window, name: 'Stim_Rec', units : 'height', 
-    width: [0.06, 0.06][0], height: [0.06, 0.06][1],
+    width: [0.055, 0.055][0], height: [0.055, 0.055][1],
     ori: 0, pos: [0, 0],
     lineWidth: 1, lineColor: new util.Color([1, 1, 1]),
     fillColor: new util.Color([1, 1, 1]),
