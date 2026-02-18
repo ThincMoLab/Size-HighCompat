@@ -589,7 +589,7 @@ num_trials_sound_check = 20;
     texRes : 128, interpolate : true, depth : -3.0 
   });
   
-  console.log('mark')
+  console.log('mark1')
   RT_Stim_Hand = new visual.Polygon ({
     win: psychoJS.window, name: 'RT_Stim_Hand', units : 'height', 
     edges: 32, size:[0.025, 0.025],
@@ -4118,7 +4118,7 @@ function Creat_StimSeqRoutineBegin(trials) {
             util.shuffle(x16);
             for (var i, _pj_c = 0, _pj_a = x16, _pj_b = _pj_a.length; (_pj_c < _pj_b); _pj_c += 1) {
                 i = _pj_a[_pj_c];           
-                seq_position_shape.push(position_rec[i])
+                seq_position_shape.push(position[i])
                 seq_key_shape.push(key[i]);
                 seq_keynum_shape.push(keynum[i]);
                 seq_stimnum_shape.push(stimnum[i]);
@@ -4126,7 +4126,7 @@ function Creat_StimSeqRoutineBegin(trials) {
             util.shuffle(x16);
             for (var i, _pj_c = 0, _pj_a = x16, _pj_b = _pj_a.length; (_pj_c < _pj_b); _pj_c += 1) {
                 i = _pj_a[_pj_c];
-                seq_position_shape.push(position_rec[i])
+                seq_position_shape.push(position[i])
                 seq_key_shape.push(key[i]);
                 seq_keynum_shape.push(keynum[i]);
                 seq_stimnum_shape.push(stimnum[i]);
@@ -4134,7 +4134,7 @@ function Creat_StimSeqRoutineBegin(trials) {
             util.shuffle(x8_new);
             for (var i, _pj_c = 0, _pj_a = x8_new, _pj_b = _pj_a.length; (_pj_c < _pj_b); _pj_c += 1) {
                 i = _pj_a[_pj_c];
-                seq_position_shape.push(position_rec[i])
+                seq_position_shape.push(position[i])
                 seq_key_shape.push(key[i]);
                 seq_keynum_shape.push(keynum[i]);
                 seq_stimnum_shape.push(stimnum[i]);
@@ -4149,7 +4149,7 @@ function Creat_StimSeqRoutineBegin(trials) {
           util.shuffle(x16);
           for (var i, _pj_c = 0, _pj_a = x16, _pj_b = _pj_a.length; (_pj_c < _pj_b); _pj_c += 1) {
               i = _pj_a[_pj_c];
-              seq_position_shape.push(position_rec[i])
+              seq_position_shape.push(position[i])
               seq_key_shape.push(key[i]);
               seq_keynum_shape.push(keynum[i]);
               seq_stimnum_shape.push(stimnum[i]);
@@ -4163,7 +4163,7 @@ function Creat_StimSeqRoutineBegin(trials) {
             util.shuffle(x_new);
             for (var i, _pj_c = 0, _pj_a = x_new, _pj_b = _pj_a.length; (_pj_c < _pj_b); _pj_c += 1) {
                 i = _pj_a[_pj_c];
-                seq_position_shape.push(position_rec[i])
+                seq_position_shape.push(position[i])
                 seq_key_shape.push(key[i]);
                 seq_keynum_shape.push(keynum[i]);
                 seq_stimnum_shape.push(stimnum[i]);
@@ -4178,7 +4178,7 @@ function Creat_StimSeqRoutineBegin(trials) {
           util.shuffle(x16);
           for (var i, _pj_c = 0, _pj_a = x16, _pj_b = _pj_a.length; (_pj_c < _pj_b); _pj_c += 1) {
               i = _pj_a[_pj_c];
-              seq_position_shape.push(position_rec[i])
+              seq_position_shape.push(position[i])
               seq_key_shape.push(key[i]);
               seq_keynum_shape.push(keynum[i]);
               seq_stimnum_shape.push(stimnum[i]);
@@ -4192,7 +4192,7 @@ function Creat_StimSeqRoutineBegin(trials) {
             util.shuffle(x_new);
             for (var i, _pj_c = 0, _pj_a = x_new, _pj_b = _pj_a.length; (_pj_c < _pj_b); _pj_c += 1) {
                 i = _pj_a[_pj_c];
-                seq_position_shape.push(position_rec[i])
+                seq_position_shape.push(position[i])
                 seq_key_shape.push(key[i]);
                 seq_keynum_shape.push(keynum[i]);
                 seq_stimnum_shape.push(stimnum[i]);
