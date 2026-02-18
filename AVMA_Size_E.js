@@ -2191,6 +2191,9 @@ function Init_StimRoutineBegin(trials) {
       symb_remap_ind[remap_pair_2[0]] = symb_map_ind[remap_pair_2[1]];
       symb_remap_ind[remap_pair_2[1]] = symb_map_ind[remap_pair_2[0]];
 
+      
+      console.log(remap_pair_1)
+      console.log(remap_pair_2)
     /* for (var i = 0, _pj_a = num_symb; (i < _pj_a); i += 1) {
       symb_map.push(symb[symb_map_ind[i]]);
       symb_remap.push(symb[symb_remap_ind[i]]);
